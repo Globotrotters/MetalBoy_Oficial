@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 1b9c2c62ea703ce418eef3c5a638e023
-timeCreated: 1523660655
+guid: 8eac7bdafa6c13d44bec57e29b6abc1b
+timeCreated: 1524008164
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: assets_0
-    21300002: assets_1
-    21300004: assets_2
-    21300006: assets_3
-    21300008: assets_4
-    21300010: assets_5
+    21300000: Assets_MetalBoy_0
+    21300002: Assets_MetalBoy_1
+    21300004: Assets_MetalBoy_2
+    21300006: Assets_MetalBoy_3
+    21300008: Assets_MetalBoy_4
+    21300010: Assets_MetalBoy_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: assets_0
+      name: Assets_MetalBoy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,7 +150,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: assets_1
+      name: Assets_MetalBoy_1
       rect:
         serializedVersion: 2
         x: 173
@@ -164,7 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: assets_2
+      name: Assets_MetalBoy_2
       rect:
         serializedVersion: 2
         x: 348
@@ -178,7 +178,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: assets_3
+      name: Assets_MetalBoy_3
       rect:
         serializedVersion: 2
         x: 514
@@ -192,7 +192,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: assets_4
+      name: Assets_MetalBoy_4
       rect:
         serializedVersion: 2
         x: 688
@@ -206,7 +206,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: assets_5
+      name: Assets_MetalBoy_5
       rect:
         serializedVersion: 2
         x: 0
