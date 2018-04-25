@@ -1,9 +1,55 @@
 fileFormatVersion: 2
-guid: 5fc595276ab03a44baefe50ddc0be2a4
-timeCreated: 1524091674
+guid: fdb45f20650b47a429e8075cb7170567
+timeCreated: 1524524468
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Armadura_Personagem_0
+    21300002: Armadura_Personagem_1
+    21300004: Armadura_Personagem_2
+    21300006: Armadura_Personagem_3
+    21300008: Armadura_Personagem_4
+    21300010: Armadura_Personagem_5
+    21300012: Armadura_Personagem_6
+    21300014: Armadura_Personagem_7
+    21300016: Armadura_Personagem_8
+    21300018: Armadura_Personagem_9
+    21300020: Armadura_Personagem_10
+    21300022: Armadura_Personagem_11
+    21300024: Armadura_Personagem_12
+    21300026: Armadura_Personagem_13
+    21300028: Armadura_Personagem_14
+    21300030: Armadura_Personagem_15
+    21300032: Armadura_Personagem_16
+    21300034: Armadura_Personagem_17
+    21300036: Armadura_Personagem_18
+    21300038: Armadura_Personagem_19
+    21300040: Armadura_Personagem_20
+    21300042: Armadura_Personagem_21
+    21300044: Armadura_Personagem_22
+    21300046: Armadura_Personagem_23
+    21300048: Armadura_Personagem_24
+    21300050: Armadura_Personagem_25
+    21300052: Armadura_Personagem_26
+    21300054: Armadura_Personagem_27
+    21300056: Armadura_Personagem_28
+    21300058: Armadura_Personagem_29
+    21300060: Armadura_Personagem_30
+    21300062: Armadura_Personagem_31
+    21300064: Armadura_Personagem_32
+    21300066: Armadura_Personagem_34
+    21300068: Armadura_Personagem_35
+    21300070: Armadura_Personagem_36
+    21300072: Armadura_Personagem_37
+    21300074: Armadura_Personagem_38
+    21300076: Armadura_Personagem_40
+    21300078: Armadura_Personagem_41
+    21300080: Armadura_Personagem_42
+    21300082: Armadura_Personagem_43
+    21300084: Armadura_Personagem_44
+    21300086: Armadura_Personagem_45
+    21300088: Armadura_Personagem_46
+    21300090: Armadura_Personagem_47
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -66,9 +112,713 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Armadura_Personagem_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 497
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 498
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 498
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 498
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 496
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 496
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 496
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_7
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 496
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 410
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 410
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 410
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 410
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_12
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 410
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_13
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 410
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_14
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 410
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 409
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 408
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 333
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 332
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 333
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_20
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 337
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_21
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 339
+        width: 51
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_22
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 335
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_23
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 336
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 261
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 261
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 261
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_27
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 261
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 261
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_29
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 261
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_30
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 259
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_31
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 259
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 169
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 169
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_35
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 169
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_36
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 169
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 169
+        width: 76
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_38
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 169
+        width: 76
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_40
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 169
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_41
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 169
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_42
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 169
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_43
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 81
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_44
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 69
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_45
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 67
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_46
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 65
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Armadura_Personagem_47
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
