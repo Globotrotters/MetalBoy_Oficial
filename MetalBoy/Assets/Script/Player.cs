@@ -24,7 +24,8 @@ public class Player : MonoBehaviour {
 	public float speed;
 	public float jump;
     public bool estaPulando = false;
-    private int life = 5;
+    private float vidaPersonagem = 10f;
+    // private int life = 5;
 
     
 
@@ -116,4 +117,17 @@ public class Player : MonoBehaviour {
         }
     }
 
-}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "tiro")
+        {
+            vidaPersonagem--;
+            Debug.Log(vidaPersonagem);
+            if (vidaPersonagem == 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+} 

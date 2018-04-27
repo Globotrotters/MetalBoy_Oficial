@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Plataforma_Chao
+  - MegaMan
+  - boss
+  - tiro
+  - Personagem
   layers:
   - Default
   - TransparentFX
@@ -21,7 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - EasterEgg
   - 
   - 
   - 
