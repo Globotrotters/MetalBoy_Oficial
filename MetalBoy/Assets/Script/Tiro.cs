@@ -8,36 +8,40 @@ public class Tiro : MonoBehaviour
     public float m_Velocidade;
     public float vidaUtilTiro = 8f;
     float tempoNascimento;
+    public Transform posPlayer;
+    private Vector3 posPlayerQuandoAtirou;
     
 
 
     void Start()
     {
         tempoNascimento = Time.time;
+        posPlayerQuandoAtirou = posPlayer.position;
     }
 
     void Update()
     {
-        
-
-        transform.Translate(Vector2.right * m_Velocidade * Time.deltaTime);
-
+        transform.position = Vector2.MoveTowards(transform.position, posPlayerQuandoAtirou, m_Velocidade * Time.deltaTime);
     }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag != "Inimigo")
         {
             Destroy(gameObject);
-        }    
-        
+        }   
     }
 
     public void FixedUpdate()
     {
+        if (transform.position == posPlayerQuandoAtirou)
+        {
+            Destroy(gameObject);
+        }
+
         if (Time.time >= tempoNascimento + vidaUtilTiro)
         {
             Destroy(gameObject);
         }
     }
-
 }

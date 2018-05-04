@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour {
 
@@ -10,6 +13,9 @@ public class Player : MonoBehaviour {
     public SpriteRenderer fliparPersonagem;
     public GameObject tiroPersonagem;
     public Transform pontaArma;
+    public GameObject painelMorrer;
+    public Button[] opcao;
+     
 
     
 	// Transform
@@ -24,7 +30,10 @@ public class Player : MonoBehaviour {
 	public float speed;
 	public float jump;
     public bool estaPulando = false;
-    private float vidaPersonagem = 10f;
+    private float vidaTotal = 20f;
+    private float vidaPersonagem = 1f;
+    private float escalaPersonagem;
+
     // private int life = 5;
 
     
@@ -38,7 +47,7 @@ public class Player : MonoBehaviour {
 
 	public void Start () 
 	{
-        
+        escalaPersonagem = transform.localScale.x;
     }
 
 	public void Update () 
@@ -49,11 +58,17 @@ public class Player : MonoBehaviour {
 
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(tiroPersonagem, pontaArma.position , pontaArma.rotation);
-            
+            GameObject objetoTiro = Instantiate(tiroPersonagem, pontaArma.position , pontaArma.rotation);
+
+            if(transform.localScale.x > 0)
+            {
+                objetoTiro.GetComponent<TiroPersonagem>().tiroParaDireita = true;
+            }
+            else if(transform.localScale.x < 0)
+            {
+                objetoTiro.GetComponent<TiroPersonagem>().tiroParaDireita = false;
+            }
         }
-
-
 	}
 
 	public void FixedUpdate()
@@ -75,7 +90,7 @@ public class Player : MonoBehaviour {
         }
 
         // comando para movimentar na direção em X.
-        posX = transform.position.x + (moveHorizontal * speed);
+        posX = Mathf.Clamp(transform.position.x + (moveHorizontal * speed), -2, 337);
         // para pular.
         //posY = transform.position.y + (moveVertical * jump);
         transform.position = new Vector2(posX, transform.position.y);
@@ -93,27 +108,27 @@ public class Player : MonoBehaviour {
             personagem.SetBool("Andar", true);
             if (moveHorizontal > 0)
             {
-                fliparPersonagem.flipX = false;
+                //fliparPersonagem.flipX = false;
+                transform.localScale = new Vector3(escalaPersonagem, escalaPersonagem, 1);
             }
 
             else
             {
-                fliparPersonagem.flipX = true;
+                //fliparPersonagem.flipX = true;
+                transform.localScale = new Vector3(-escalaPersonagem, escalaPersonagem, 1);
             }
             
 
         }
 
+              
      }
 
     public void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Plataforma_Chao")
         {
-            {
-                estaPulando = false;
-            }
-
+            estaPulando = false;
         }
     }
 
@@ -125,9 +140,36 @@ public class Player : MonoBehaviour {
             Debug.Log(vidaPersonagem);
             if (vidaPersonagem == 0)
             {
-                Destroy(gameObject);
+                personagem.SetBool("Morrer", true);
+                
+
+                
+
             }
         }
     }
 
-} 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "PowerUP")
+        {
+            vidaPersonagem = vidaTotal;
+        }
+
+        if (collision.gameObject.tag == "Fim_Cenario")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void ContinuarSim()
+    {
+        SceneManager.LoadScene("cenario1");
+    }
+
+    public void ContinuarNao()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+}

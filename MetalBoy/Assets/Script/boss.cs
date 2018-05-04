@@ -110,9 +110,9 @@ public class boss : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "tiro")
+        if (col.gameObject.tag == "TiroPersonagem")
         {
             vida--;
             if (vida == 0)

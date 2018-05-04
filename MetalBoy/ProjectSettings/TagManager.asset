@@ -9,6 +9,12 @@ TagManager:
   - boss
   - tiro
   - Personagem
+  - item
+  - Fim_Cenario
+  - PowerUP
+  - TiroPersonagem
+  - Porta
+  - EfeitoTiro
   layers:
   - Default
   - TransparentFX

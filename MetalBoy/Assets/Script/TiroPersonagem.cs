@@ -6,7 +6,7 @@ public class TiroPersonagem : MonoBehaviour {
 
     public GameObject efeitoTiro;
     private GameObject efeitoTiroInstanciado;
-
+    public bool tiroParaDireita; //true ou false
 
     public float velocidadeProjetil;
     private float tempoProjetil;
@@ -29,9 +29,15 @@ public class TiroPersonagem : MonoBehaviour {
 	
 	void Update ()
     {
-        transform.Translate((Vector2.right * velocidadeProjetil) * Time.deltaTime);
+        if (tiroParaDireita)
+        {
+            transform.Translate((Vector2.right * velocidadeProjetil) * Time.deltaTime);
+        }
 
-        
+        else
+        {
+            transform.Translate((Vector2.left * velocidadeProjetil) * Time.deltaTime);
+        }        
     }
 
     private void FixedUpdate()
@@ -47,5 +53,13 @@ public class TiroPersonagem : MonoBehaviour {
         }
               
 
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag != "EfeitoTiro" && collision.gameObject.tag != "Personagem")
+        {
+            Destroy(gameObject);
+        }
     }
 }

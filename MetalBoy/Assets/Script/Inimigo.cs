@@ -10,24 +10,41 @@ public class Inimigo : MonoBehaviour
     float tempoIniciativa;
     public Animator inimigo;
 
+    private bool viradoDiretia = true;
+
     void Start()
     {
-        playerT = GameObject.FindGameObjectWithTag("Player").transform;
+        playerT = GameObject.FindGameObjectWithTag("Personagem").transform;
     }
 
     void Update ()
     {
         if (playerT != null)
         {
-            transform.right = (playerT.position - transform.position);
-
             float _distancia = Vector2.Distance(transform.position, playerT.position);
-            if (_distancia > 1 && _distancia < 3)
-
+            if (_distancia > 5 && _distancia < 10)
+            {
                 transform.position = Vector2.MoveTowards(transform.position, playerT.position, velocidade * Time.deltaTime);
 
-            if (_distancia < 3)
+                //player na esquerda
+                if (playerT.position.x < transform.position.x)
+                {
+                    viradoDiretia = false;
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+
+                //player na direita
+                if (playerT.position.x > transform.position.x)
+                {
+                    viradoDiretia = true;
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
+            }               
+
+            if (_distancia < 10)
+            {
                 Atirar();
+            }
         }
     }
 
@@ -38,7 +55,9 @@ public class Inimigo : MonoBehaviour
         {
             tempoIniciativa = 0;
             inimigo.SetTrigger("Atacando");
-            Instantiate(tiroPrefab, transform.position, transform.rotation);
+            
+            GameObject tiroObjeto = Instantiate(tiroPrefab, transform.position, transform.rotation);
+            tiroObjeto.GetComponent<Tiro>().posPlayer = playerT;
         }
     }
 
