@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114936083889714284}
   m_Layer: 0
   m_Name: tiros
-  m_TagString: Inimigo
+  m_TagString: tiro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 957e22d1ff76d344f977f5e4477b53a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Velocidade: 20
-  vidaUtilTiro: 8
+  m_Velocidade: 30
+  vidaUtilTiro: 3
   posPlayer: {fileID: 0}
 --- !u!212 &212683168395587370
 SpriteRenderer:

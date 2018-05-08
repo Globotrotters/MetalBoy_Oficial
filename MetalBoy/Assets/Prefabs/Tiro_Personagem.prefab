@@ -101,10 +101,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   efeitoTiro: {fileID: 1620088792624878, guid: 6fb0025eff5c5c949b6f59f2e446423d, type: 2}
   tiroParaDireita: 0
-  velocidadeProjetil: 10
-  delayEfeito: 0.05
+  velocidadeProjetil: 25
+  delayEfeito: 0.015
   inicialTempoEfeito: 0
-  delayTiro: 5
+  delayTiro: 2
   inicialTempoTiro: 0
 --- !u!212 &212910007752073542
 SpriteRenderer:

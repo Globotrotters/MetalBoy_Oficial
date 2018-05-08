@@ -15,6 +15,8 @@ public class Player : MonoBehaviour {
     public Transform pontaArma;
     public GameObject painelMorrer;
     public Button[] opcao;
+    public GameObject oEasterEgg;
+    public GameObject oBoss;
      
 
     
@@ -28,15 +30,12 @@ public class Player : MonoBehaviour {
 
 	//Atributos
 	public float speed;
-	public float jump;
+	public float jump = 5f;
     public bool estaPulando = false;
-    private float vidaTotal = 20f;
-    private float vidaPersonagem = 1f;
+    private float vidaTotal = 10f;
+    public float vidaPersonagem = 10f;
     private float escalaPersonagem;
-
-    // private int life = 5;
-
-    
+      
 
     public void Awake()
 	{
@@ -91,6 +90,7 @@ public class Player : MonoBehaviour {
 
         // comando para movimentar na direção em X.
         posX = Mathf.Clamp(transform.position.x + (moveHorizontal * speed), -2, 337);
+        
         // para pular.
         //posY = transform.position.y + (moveVertical * jump);
         transform.position = new Vector2(posX, transform.position.y);
@@ -136,15 +136,11 @@ public class Player : MonoBehaviour {
     {
         if (collision.gameObject.tag == "tiro")
         {
-            vidaPersonagem--;
-            Debug.Log(vidaPersonagem);
+            vidaPersonagem--;            
             if (vidaPersonagem == 0)
             {
                 personagem.SetBool("Morrer", true);
-                
-
-                
-
+                SceneManager.LoadScene("cenario1");                
             }
         }
     }
@@ -154,13 +150,19 @@ public class Player : MonoBehaviour {
         if (collision.gameObject.tag == "PowerUP")
         {
             vidaPersonagem = vidaTotal;
+            oEasterEgg.SetActive(true);
+
+
+            
         }
 
         if (collision.gameObject.tag == "Fim_Cenario")
         {
             Destroy(gameObject);
         }
+
     }
+
 
     public void ContinuarSim()
     {

@@ -24,9 +24,7 @@ public class EasterEgg : MonoBehaviour {
 	
 	public void FixedUpdate ()
     {
-        //easterEgg.AddForce(Vector2.down * velocidade);
-
-        
+               
         if (Time.time >= tempoAnimacao + delayAnimacao )
         {
             easterEgg.AddForce(Vector2.up * velocidade);

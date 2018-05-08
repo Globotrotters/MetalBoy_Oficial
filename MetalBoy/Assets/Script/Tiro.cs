@@ -6,7 +6,7 @@ public class Tiro : MonoBehaviour
 {
    
     public float m_Velocidade;
-    public float vidaUtilTiro = 8f;
+    public float vidaUtilTiro = 3f;
     float tempoNascimento;
     public Transform posPlayer;
     private Vector3 posPlayerQuandoAtirou;

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212115998154345612}
   m_Layer: 0
   m_Name: Fogo_Arma
-  m_TagString: EfeitoTiro
+  m_TagString: TiroPersonagem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

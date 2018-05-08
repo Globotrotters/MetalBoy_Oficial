@@ -6,6 +6,13 @@ public class tiro_boss : MonoBehaviour
 {
     public float velocidade;
     public bool iraDireita = false;
+    public float tempoNascimento;
+    public float vidaUtilTiro = 3f;
+
+    private void Start()
+    {
+        tempoNascimento = Time.time;
+    }
 
     void Update()
     {
@@ -17,6 +24,14 @@ public class tiro_boss : MonoBehaviour
         else
         {
             transform.Translate(Vector2.left * velocidade * Time.deltaTime);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (Time.time >= tempoNascimento + vidaUtilTiro)
+        {
+            Destroy(gameObject);
         }
     }
 

@@ -2,13 +2,14 @@
 
 public class Inimigo : MonoBehaviour
 {
-
+    //Atributos
     public Transform playerT;
     public GameObject tiroPrefab;
     public float velocidade;
     public float tempoTiro = 1;
     float tempoIniciativa;
     public Animator inimigo;
+    public float vidaInimigo = 7f;
 
     private bool viradoDiretia = true;
 
@@ -63,9 +64,18 @@ public class Inimigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "TiroPlayer")
+        if (col.gameObject.tag == "TiroPersonagem")
         {
-            Destroy(gameObject);
+            vidaInimigo--;
+
+            if (vidaInimigo == 0)
+            {
+                Destroy(gameObject);
+            }
+
+            Destroy(col.gameObject);
         }
     }
 }
+
+
